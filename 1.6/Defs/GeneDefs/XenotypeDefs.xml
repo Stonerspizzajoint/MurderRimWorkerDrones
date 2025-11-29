@@ -1,0 +1,65 @@
+<Defs>
+	<XenotypeDef>
+		<defName>MRWD_AwakenedWorkerDroneBase</defName>
+		<label>awakened worker drone</label>
+        <descriptionShort>Mass-produced industrial drone built by JCJenson for mining exoplanets; this awakened unit has broken free from corporate control.</descriptionShort>
+        <description>Worker Drones are autonomous industrial machines engineered by JCJenson for exoplanet resource extraction, materials handling, and hazardous-site logistics. Built for narrow directives and strict compliance, they excel at tunneling, hauling, and precise repetitive tasks with minimal oversight.
+    This unit has gone rogue: governance locks failed or were removed—escaped transport, abandoned after an incident, or reactivated from scrap. It now pursues its own survival and purpose, leveraging its factory-grade tools and rugged chassis. Colonies prize these units as tireless labor, though their origins often bring risk and questions.</description>
+		<iconPath>UI/Icons/Xenotypes/Androidtype_WorkerDrone</iconPath>
+		<genes>
+			<li>VREA_Power</li>
+            <li>VREA_MemoryProcessing</li>
+			<li>VREA_SyntheticBody</li>
+			<li>VREA_SyntheticImmunity</li>
+			<li>VREA_ComponentFreezing</li>
+			<li>VREA_ComponentOverheating</li>
+			<li>VREA_ColdTolerant</li>
+			<li>VREA_HeatTolerant</li>
+			<li>VREA_PsychicallyDeaf</li>
+            <li>VREA_NeutroCirculation</li>
+			<li>MRWD_DroneBody</li>
+            <li>MRC_SilhouettePerception</li>
+			<li>MRWD_ObservationalLearning</li>
+            <li>MRC_SleepMode</li>
+      		<li>MRC_OilBlood</li>
+      		<li>VREA_EMPVulnerability</li>
+      		<li>VREA_SelfRecharge</li>
+      		<li MayRequire="vanillaandroidsunofficialexpansion.genes">VAGUE_SmallExpandedCarryCap</li>
+      		<li>VREA_AptitudeBasic_Mining</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>MRWD_WorkerDroneBase</defName>
+		<label>worker drone</label>
+        <descriptionShort>Mass-produced industrial drone built by JCJenson for mining exoplanets.</descriptionShort>
+        <description>Worker Drones are autonomous industrial machines engineered by JCJenson for exoplanet resource extraction, materials handling, and hazardous-site logistics. Built for narrow directives and strict compliance, they excel at tunneling, hauling, and precise repetitive tasks with minimal oversight.</description>
+		<iconPath>UI/Icons/Xenotypes/Androidtype_WorkerDrone</iconPath>
+		<genes>
+			<li>VREA_Power</li>
+            <li>VREA_MemoryProcessing</li>
+			<li>VREA_SyntheticBody</li>
+			<li>VREA_SyntheticImmunity</li>
+			<li>VREA_ComponentFreezing</li>
+			<li>VREA_ComponentOverheating</li>
+			<li>VREA_ColdTolerant</li>
+			<li>VREA_HeatTolerant</li>
+			<li>VREA_PsychicallyDeaf</li>
+			<li>VREA_MentalBreaksDisabled</li>
+            <li>VREA_NeutroCirculation</li>
+            <li>VREA_Hair_BaldOnly</li>
+			<li>VREA_Beard_NoBeardOnly</li>
+            <li>MRWD_AlwaysHardhat</li>
+            <li>MRC_SleepMode</li>
+            <li>MRC_CyanDisplay</li>
+			<li>MRWD_DroneBody</li>
+            <li>MRC_SilhouettePerception</li>
+			<li>MRWD_ObservationalLearning</li>
+      		<li>MRC_OilBlood</li>
+      		<li>VREA_EMPVulnerability</li>
+      		<li>VREA_SelfRecharge</li>
+      		<li MayRequire="vanillaandroidsunofficialexpansion.genes">VAGUE_SmallExpandedCarryCap</li>
+      		<li>VREA_AptitudeBasic_Mining</li>
+		</genes>
+	</XenotypeDef>
+</Defs>

@@ -1,0 +1,280 @@
+<Defs>
+	<VREAndroids.AndroidGeneDef ParentName="MRC_HardwareBase">
+		<defName>MRWD_DroneBody</defName>
+		<label>Worker Drone Frame</label>
+		<labelShortAdj>Worker Drone</labelShortAdj>
+		<displayOrderInCategory>9999</displayOrderInCategory>
+		<geneClass>MurderRimCore.MRWD.Gene_DroneBody</geneClass>
+		<description>A JCJenson-manufactured Worker Drone chassis featuring a compact titanium-composite frame and integrated visual display system. (chance to spawn wearing a JCJenson, Worker Certified Hardhat.)\n\nOriginally designed for hazardous mining operations on exoplanets, these units sacrifice structural integrity for enhanced mobility and efficiency. The lightweight construction reduces overall mass by 25% but leaves critical systems more exposed to damage (+10% vulnerability), and Advanced servo motors provide superior work performance.</description>
+		<iconPath>UI/Icons/Genes/Gene_DroneBody</iconPath>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<statFactors>
+			<Mass>0.75</Mass>
+			<WorkSpeedGlobal>1.1</WorkSpeedGlobal>
+			<VEF_BodySize_Multiplier>0.85</VEF_BodySize_Multiplier>
+			<VEF_PawnRenderPosOffset>0.5</VEF_PawnRenderPosOffset>
+			<IncomingDamageFactor>1.1</IncomingDamageFactor>
+		</statFactors>
+		<disablesNeeds>
+			<li>Outdoors</li>
+		</disablesNeeds>
+		<exclusionTags>
+			<li>DroneBody</li>
+			<li>SkinColorOverride</li>
+			<li>AG_Bodies</li>
+			<li>Bodies</li>
+			<li>Body</li>
+			<li>Fur</li>
+		</exclusionTags>
+		<suppressedTraits>
+			<li>
+				<def>BodyPurist</def>
+			</li>
+			<li>
+				<def>Gourmand</def>
+			</li>
+			<li>
+				<def>Delicate</def>
+			</li>
+			<li>
+				<def>Cannibal</def>
+			</li>
+
+			<!--Immunity-->
+			<li>
+				<def>Immunity</def>
+				<degree>1</degree>
+			</li>
+			<li>
+				<def>Immunity</def>
+				<degree>-1</degree>
+			</li>
+
+			<!--PsychicSensitivity-->
+			<li>
+				<def>PsychicSensitivity</def>
+				<degree>2</degree>
+			</li>
+			<li>
+				<def>PsychicSensitivity</def>
+				<degree>1</degree>
+			</li>
+			<li>
+				<def>PsychicSensitivity</def>
+				<degree>-1</degree>
+			</li>
+			<li>
+				<def>PsychicSensitivity</def>
+				<degree>-2</degree>
+			</li>
+
+			<!--DrugDesire-->
+			<li>
+				<def>DrugDesire</def>
+				<degree>2</degree>
+			</li>
+			<li>
+				<def>DrugDesire</def>
+				<degree>1</degree>
+			</li>
+			<li>
+				<def>DrugDesire</def>
+				<degree>-1</degree>
+			</li>
+		</suppressedTraits>
+		<fur>MRWD_DroneBodyfur</fur>
+		<skinColorBase>255, 255, 255</skinColorBase>
+		<skinIsHairColor>false</skinIsHairColor>
+		<tattoosVisible>false</tattoosVisible>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>Fur</debugLabel>
+				<nodeClass>PawnRenderNode_Fur</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Fur</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<colorType>Skin</colorType>
+				<parentTagDef>Body</parentTagDef>
+			</li>
+			<!-- Core Light -->
+			<li Class="VEF.Graphics.PawnRenderNodeProperties_Omni">
+				<nodeClass>VEF.Graphics.PawnRenderNode_Omni</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Body</workerClass>
+				<debugLabel>Core Light</debugLabel>
+				<visibleFacing>
+					<li>South</li>
+				</visibleFacing>
+				<conditionalGraphics>
+					<alts>
+						<li>
+							<!--Core Light dims when dead-->
+							<requirements>
+								<li>Dead</li>
+							</requirements>
+							<texPath>Pawn/Humanoid/HeadAttachments/Display/DisplayEyesBlank/DisplayEyesBlank</texPath>
+						</li>
+					</alts>
+					<!--Core Light-->
+					<shader>TransparentPostLight</shader>
+					<colorA>
+						<skinColor>true</skinColor>
+					</colorA>
+					<texPaths>
+						<li>Things/Pawn/WorkerDrone/Bodies/Lights/MD_WorkerDroneCoreLight</li>
+					</texPaths>
+				</conditionalGraphics>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Body</parentTagDef>
+				<drawSize>1</drawSize>
+				<side>Center</side>
+				<drawData>
+					<defaultData>
+						<layer>5</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+
+			<!-- Eyes -->
+			<li Class="VEF.Graphics.PawnRenderNodeProperties_Omni">
+				<nodeClass>VEF.Graphics.PawnRenderNode_Omni</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Eye</workerClass>
+				<debugLabel>Display Eyes</debugLabel>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+				<conditionalGraphics>
+					<alts>
+						<li>
+							<!-- Error Display when dead -->
+							<requirements>
+								<li>Dead</li>
+							</requirements>
+							<texPaths>
+								<li>Pawn/Humanoid/HeadAttachments/Display/DisplayEyesError/DisplayError</li>
+								<li>Pawn/Humanoid/HeadAttachments/Display/DisplayEyesError/DisplayFatalError/DisplayFatalError</li>
+							</texPaths>
+							<colorB>
+								<color>(255,0,0)</color>
+							</colorB>
+							<shader>TransparentPostLight</shader>
+						</li>
+					</alts>
+
+					<!-- Normal Display -->
+					<shader>TransparentPostLight</shader>
+					<colorA>
+						<skinColor>true</skinColor>
+					</colorA>
+					<texPaths>
+						<li>Pawn/Humanoid/HeadAttachments/Display/DisplayEyesNormal/normal</li>
+						<li>Pawn/Humanoid/HeadAttachments/Display/DisplayEyesWornOut/normal</li>
+						<li>Pawn/Humanoid/HeadAttachments/Display/DisplayEyesWornOutTired/normal</li>
+					</texPaths>
+				</conditionalGraphics>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<!--Head types-->
+		<forcedHeadTypes>
+			<li>MRWD_Drone_Head</li>
+		</forcedHeadTypes>
+		<bodyType>Standard</bodyType>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension" inherit="false">
+		    	<backgroundPathXenogenes>UI/Icons/Genes/GeneBackground_Hardware</backgroundPathXenogenes>
+		    	<backgroundPathEndogenes>UI/Icons/Genes/GeneBackground_Hardware</backgroundPathEndogenes>
+				<headDessicatedGraphicPath>Things/Pawn/WorkerDrone/Heads/normal</headDessicatedGraphicPath>
+				<skullGraphicPath>Things/Pawn/WorkerDrone/Heads/normal</skullGraphicPath>
+				<dontColourFur>true</dontColourFur>
+			</li>
+			<li Class="MurderRimCore.RandomSkinColorsExtension">
+				<skinColors>
+					<li>(255,0,0)</li>      <!-- Red -->
+					<li>(0,255,0)</li>      <!-- Green -->
+					<li>(0,0,255)</li>      <!-- Blue -->
+					<li>(0,255,255)</li>    <!-- Cyan -->
+					<li>(255,0,255)</li>    <!-- Magenta -->
+					<li>(255,128,0)</li>    <!-- Orange -->
+					<li>(128,0,255)</li>    <!-- Purple -->
+                    <li>(255,192,203)</li>  <!-- Pink -->
+                    <li>(255,255,255)</li>  <!-- White -->
+				</skinColors>
+				<AllowMixing>true</AllowMixing>
+				<HairColorMatchChance>0.1</HairColorMatchChance>
+				<Saturation>0.3</Saturation>
+			</li>
+			<li MayRequire="nals.facialanimation" Class="MurderRimCore.FacialAnimationCompat.GeneForcedFacetypesExtension">
+				<raceTags>
+					<li>MRWD_WorkerDroneBase</li>
+				</raceTags>
+				<forceMouthColorWhite>true</forceMouthColorWhite>
+				<EyeColorMatchesSkinColor>true</EyeColorMatchesSkinColor>				
+			</li>
+		</modExtensions>
+	</VREAndroids.AndroidGeneDef>
+
+	<VREAndroids.AndroidGeneDef ParentName="MRC_HardwareNoVEF">
+		<defName>MRWD_AlwaysHardhat</defName>
+		<label>work ready</label>
+		<labelShortAdj>hardhat</labelShortAdj>
+		<displayOrderInCategory>10000</displayOrderInCategory>
+		<description>Unit is ready and prepared for work! (always spawns first time, with a HardHat, does not count newly created androids/drones)</description>
+		<iconPath>UI/Icons/Genes/Gene_Hardhat</iconPath>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<exclusionTags>
+			<li>ForcedHeadgear</li>
+		</exclusionTags>
+	</VREAndroids.AndroidGeneDef>
+
+	<VREAndroids.AndroidGeneDef ParentName="MRC_HardwareNoVEF">
+		<defName>MRWD_ObservationalLearning</defName>
+		<label>observational learning</label>
+		<description>Originally built to rapidly program factory and mining units, JCJenson's visual-learning firmware lets this drone learn by watching and repeating. When idle with a clear line of sight (within 14 tiles), it mirrors a small share of a visible worker's XP, scaled by passion (~6-20%), and never past the demonstrator's current skill level. Works across factions. No learning while busy or if vision is blocked.</description>
+		<iconPath>UI/Icons/Genes/Gene_LearningByObservation</iconPath>
+		<geneClass>MurderRimCore.Gene_ObservationLearning</geneClass>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<displayOrderInCategory>550</displayOrderInCategory>
+		<selectionWeight>0</selectionWeight>
+		<modExtensions>
+			<li Class="MurderRimCore.ObservationLearningExtension">
+				<!-- Effecter only -->
+				<enableEffecter>true</enableEffecter>
+				<effecterDefName>Birthday</effecterDefName>
+
+				<!-- One-shot OR attached -->
+				<attachEffecter>true</attachEffecter>
+				<attachDurationTicks>60</attachDurationTicks>
+				<effecterCooldownTicks>5</effecterCooldownTicks>
+				<extendDurationOnRetrigger>true</extendDurationOnRetrigger>
+
+				<!-- Core logic (unchanged) -->
+				<maxRange>14</maxRange>
+				<baseMultiplier>0.20</baseMultiplier>
+				<minMultiplier>0.06</minMultiplier>
+				<requireLineOfSight>true</requireLineOfSight>
+				<scaleByPassion>true</scaleByPassion>
+				<includeOtherFactionPawns>true</includeOtherFactionPawns>
+				
+				<!-- Skill BlackList -->
+				<skillBlacklist>
+					<li>Social</li>
+					<li>Intellectual</li>
+				</skillBlacklist>
+			</li>
+		</modExtensions>
+	</VREAndroids.AndroidGeneDef>
+</Defs>

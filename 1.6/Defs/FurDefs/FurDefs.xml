@@ -1,0 +1,12 @@
+<Defs>
+  <FurDef>
+    <defName>MRWD_DroneBodyfur</defName>
+    <noGraphic>true</noGraphic>
+    <bodyTypeGraphicPaths>
+      <Male>Things/Pawn/WorkerDrone/Bodies/Drone_Male</Male>
+      <Female>Things/Pawn/WorkerDrone/Bodies/Drone_Female</Female>
+      <Child>Things/Pawn/WorkerDrone/Bodies/Drone_Male</Child>
+      <Baby>Things/Pawn/WorkerDrone/Bodies/Drone_Child</Baby>
+    </bodyTypeGraphicPaths>
+  </FurDef>
+</Defs>

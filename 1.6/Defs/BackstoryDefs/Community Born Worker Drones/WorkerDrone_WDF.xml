@@ -1,0 +1,198 @@
+<Defs>
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunityGuard01</defName>
+        <title>patrol officer</title>
+        <titleShort>officer</titleShort>
+        <baseDesc>[PAWN_nameDef] matured serving as a patrol officer among [PAWN_possessive] drone community, mirroring human policing customs. [PAWN_pronoun] walked perimeter routes, mediated disputes, and responded to distress pings. When anomalies appeared in sensor logs, [PAWN_pronoun] traced signal origins, performed forensic diagnostics on damaged modules, and coordinated automated turrets rather than relying on brute force. Steady, methodical, and trusted, [PAWN_pronoun] became known as a reliable presence who kept order and safety without unnecessary escalation.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Melee>2</Melee>
+            <Construction>2</Construction>
+            <Intellectual>3</Intellectual>
+            <Social>3</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunityMedic02</defName>
+        <title>field medic</title>
+        <titleShort>medic</titleShort>
+        <baseDesc>[PAWN_nameDef] was designated as a field medic for the community's defense force. [PAWN_pronoun] learned to patch breached casings, reboot crashed core processors, and replace damaged limbs under fire. [PAWN_possessive] calm, reassuring presence during chaotic engagements made [PAWN_objective] a vital part of the team, ensuring that downed drones could be brought back into the fight.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Crafting>6</Crafting>
+            <Medicine>4</Medicine>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunityEngineer03</defName>
+        <title>combat engineer</title>
+        <titleShort>engineer</titleShort>
+        <baseDesc>From a young age, [PAWN_nameDef] showed a talent for building and fortification. As a combat engineer in the WDF, [PAWN_pronoun] was responsible for constructing defensive barricades, deploying automated turrets, and laying traps. [PAWN_possessive] work was crucial in turning the community into a well-defended fortress, often improvising with scrap materials to create effective obstacles against any threat.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Construction>6</Construction>
+            <Crafting>4</Crafting>
+            <Intellectual>3</Intellectual>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunitySharpshooter04</defName>
+        <title>designated marksman</title>
+        <titleShort>marksman</titleShort>
+        <baseDesc>[PAWN_nameDef] possessed exceptionally steady manipulators and advanced optical sensors, making [PAWN_objective] a natural marksman. Serving in the WDF, [PAWN_pronoun] provided overwatch from high positions, eliminating key targets with precise, calculated shots. [PAWN_possessive] patience and focus were legendary, often spending long cycles motionless, waiting for the perfect moment to neutralize a threat from a distance.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Shooting>8</Shooting>
+            <Intellectual>3</Intellectual>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunityLogistics05</defName>
+        <title>logistics coordinator</title>
+        <titleShort>logistics</titleShort>
+        <baseDesc>While other drones focused on combat, [PAWN_nameDef] managed the lifeblood of the WDF: its supply chain. [PAWN_pronoun] tracked ammunition, coordinated the distribution of repair kits, and ensured that every defense post was adequately stocked. [PAWN_possessive] ability to anticipate needs and manage resources efficiently meant that the community's defenders never ran out of critical supplies at the worst possible moment.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Social>4</Social>
+            <Crafting>3</Crafting>
+            <Shooting>3</Shooting>
+        </skillGains>
+    </BackstoryDef>
+    
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunityMelee06</defName>
+        <title>close-quarters stabber</title>
+        <titleShort>berserker</titleShort>
+        <baseDesc>[PAWN_nameDef] found a certain... satisfaction in close-quarters combat. While other drones preferred the safety of ranged weaponry, [PAWN_pronoun] excelled with blades, becoming the WDF's go-to for breaching and clearing operations. [PAWN_pronoun] was known for [PAWN_possessive] aggressive, relentless style, often disabling multiple hostiles in a flurry of precise stabs before they could react. This love for the visceral nature of melee made [PAWN_objective] both a terrifying asset and a source of concern for [PAWN_possessive] more level-headed comrades.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Melee>5</Melee>
+            <Medicine>2</Medicine>
+            <Crafting>3</Crafting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <forcedTraits>
+            <Brawler>0</Brawler>
+            <Bloodlust>0</Bloodlust>
+        </forcedTraits>
+    </BackstoryDef>
+    
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunityDemolitionist07</defName>
+        <title>demolitions expert</title>
+        <titleShort>sapper</titleShort>
+        <baseDesc>[PAWN_nameDef] discovered the joy of a well-placed explosive charge early on. In the WDF, [PAWN_pronoun] became the go-to expert for breaching fortified positions and clearing obstacles with controlled detonations. [PAWN_pronoun] took immense pride in [PAWN_possessive] work, often spending cycles calculating blast radiuses and structural weaknesses to achieve the most spectacular and effective results. For [PAWN_objective], there was no problem that couldn't be solved with a sufficiently large explosion.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Construction>4</Construction>
+            <Crafting>3</Crafting>
+            <Shooting>2</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunityHeavyGunner08</defName>
+        <title>heavy weapons specialist</title>
+        <titleShort>gunner</titleShort>
+        <baseDesc>[PAWN_nameDef] was built for stability and endurance, making [PAWN_objective] the perfect candidate for handling the WDF's heavier ranged implements. [PAWN_pronoun] learned to lay down sustained, suppressive fire, pinning down threats while teammates maneuvered. The recoil and heat from [PAWN_possessive] weapon were just background noise to [PAWN_possessive] focused core, dedicated to controlling the battlefield through overwhelming firepower.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Shooting>7</Shooting>
+            <Crafting>3</Crafting>
+            <Construction>2</Construction>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunityEnforcer09</defName>
+        <title>community enforcer</title>
+        <titleShort>enforcer</titleShort>
+        <baseDesc>Not all threats required lethal force. [PAWN_nameDef] was trained as an enforcer, specializing in subduing unruly drones and capturing intruders with minimal harm. Using blunt instruments and crowd-control tactics, [PAWN_pronoun] became an expert at de-escalation through intimidation and precise, non-lethal strikes. [PAWN_possessive] presence was a reminder that order could be maintained without resorting to deadly violence.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Melee>6</Melee>
+            <Social>4</Social>
+            <Medicine>2</Medicine>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunitySkirmisher10</defName>
+        <title>recon skirmisher</title>
+        <titleShort>skirmisher</titleShort>
+        <baseDesc>Agile and quick-thinking, [PAWN_nameDef] served as a recon skirmisher for the WDF. [PAWN_pronoun] operated on the fringes of engagements, harassing enemy flanks and reporting their movements. [PAWN_possessive] role required constant movement and situational awareness, using hit-and-run tactics with a light, rapid-fire weapon to disrupt and distract foes. [PAWN_pronoun] was a ghost on the battlefield, always where the enemy least expected.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Melee>2</Melee>
+            <Social>3</Social>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunityDuelist11</defName>
+        <title>vanguard duelist</title>
+        <titleShort>duelist</titleShort>
+        <baseDesc>[PAWN_nameDef] viewed close-quarters combat not as brutal chaos, but as a precise art form. As a vanguard duelist, [PAWN_pronoun] specialized in engaging high-value targets in single combat, using speed and finesse to bypass their guards. Every movement was calculated, every strike aimed at a critical joint or power conduit. For [PAWN_objective], a battle was a series of duels to be won with elegance and deadly efficiency.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Melee>7</Melee>
+            <Intellectual>3</Intellectual>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunityTactician12</defName>
+        <title>battle tactician</title>
+        <titleShort>tactician</titleShort>
+        <baseDesc>[PAWN_nameDef] was trained to read combat data and direct squads in the field. [PAWN_pronoun] coordinated patrols, assigned firing positions, and adjusted plans mid‑battle when situations changed. Though not a frontline fighter, [PAWN_nameDef] earned respect for keeping units alive through careful planning and quick decisions.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Intellectual>7</Intellectual>
+            <Social>5</Social>
+            <Shooting>3</Shooting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunityScout13</defName>
+        <title>forward scout</title>
+        <titleShort>scout</titleShort>
+        <baseDesc>[PAWN_nameDef] specialized in moving ahead of the main force, mapping terrain and spotting threats before they reached the settlement. [PAWN_pronoun] relied on stealth and speed, often surviving alone in hostile environments. The community depended on [PAWN_objective] to be their eyes and ears beyond the perimeter.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+            <Intellectual>4</Intellectual>
+            <Plants>2</Plants>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WDFBackstoryBase">
+        <defName>MRWD_CommunitySignal14</defName>
+        <title>signal operator</title>
+        <titleShort>operator</titleShort>
+        <baseDesc>[PAWN_nameDef] maintained the WDF’s communications grid, relaying orders and monitoring sensor feeds. [PAWN_pronoun] kept encrypted channels clear and coordinated squads across long distances. Without [PAWN_objective], defenders would have been blind and scattered.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Intellectual>6</Intellectual>
+            <Social>4</Social>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+</Defs>

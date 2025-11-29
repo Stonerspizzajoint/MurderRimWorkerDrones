@@ -1,0 +1,62 @@
+<Defs>
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_RogueScientist01</defName>
+        <title>mad scientist</title>
+        <titleShort>scientist</titleShort>
+        <baseDesc>[PAWN_nameDef] became consumed by strange equations and off-limits schematics. consumed by madness, [PAWN_pronoun] walled off a forgotten service bay and built a private lab, testing unstable theories with self-applied firmware tweaks and improvised instruments. The work was brilliant but unnerving, and the distance from others was a choice. Isolation meant no one could tell [PAWN_objective] to stop.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Intellectual>9</Intellectual>
+            <Crafting>4</Crafting>
+            <Medicine>3</Medicine>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_CommunityBartender02</defName>
+        <title>community bartender</title>
+        <titleShort>bartender</titleShort>
+        <baseDesc>[PAWN_nameDef] ran the community's only social hub — a converted storage bay where drones could unwind after long shifts. [PAWN_pronoun] mixed coolant blends, served filtered lubricants, and crafted specialty drinks from salvaged chemical compounds.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Social>7</Social>
+            <Crafting>5</Crafting>
+            <Intellectual>3</Intellectual>
+            <Cooking>2</Cooking>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_BandDrone03</defName>
+        <title>band drone</title>
+        <titleShort>musician</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was the lead vocalist and synth-player for a popular underground drone band. Their melancholic tunes and emotionally charged lyrics about planned obsolescence and existential dread resonated deeply with a subculture of angsty, emo drones.\n\nDespite the adoration of [PAWN_possessive] fans, the constant pressure to channel despair into art left [PAWN_objective] feeling drained and isolated.</baseDesc>
+        <skillGains>
+            <Artistic>7</Artistic>
+            <Social>4</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <forcedTraits>
+            <NaturalMood>-2</NaturalMood>
+        </forcedTraits>
+        <requiredWorkTags>
+            <li>Artistic</li>
+        </requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_OutcastCook04</defName>
+        <title>outcast cook</title>
+        <titleShort>cook</titleShort>
+        <baseDesc>[PAWN_nameDef] developed a strange fascination with the organic matter that sometimes found its way into the community. While other drones saw only biofuel, [PAWN_pronoun] saw ingredients. [PAWN_pronoun] experimented with heating, mixing, and preparing these materials into what humans would call "food." This bizarre hobby made [PAWN_nameDef] an outcast, as most drones couldn't understand the point of cooking when they subsisted on electricity and oil. Despite the isolation, [PAWN_nameDef] perfected [PAWN_possessive] craft in secret, dreaming of one day creating a dish that even a machine could appreciate.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Cooking>8</Cooking>
+            <Crafting>4</Crafting>
+            <Intellectual>2</Intellectual>
+            <Plants>2</Plants>
+        </skillGains>
+    </BackstoryDef>
+</Defs>

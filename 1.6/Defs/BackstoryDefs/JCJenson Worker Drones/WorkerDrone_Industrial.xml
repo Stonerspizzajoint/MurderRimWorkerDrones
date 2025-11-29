@@ -1,0 +1,234 @@
+<Defs>
+
+    <!--============================== INDUSTRIAL DRONES ============================-->
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneAssembler01</defName>
+        <title>assembly drone</title>
+        <titleShort>assembler</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was produced and sent to a sprawling factory within the confines of JCJenson, where [PAWN_possessive] duty was the endless assembly of household goods. Day after day [PAWN_pronoun] tended machines and jigs with mechanical precision. Speech between units was forbidden, so [PAWN_pronoun] marked the passage of time in repeated motions and the steady rhythm of conveyor belts.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>8</Crafting>
+            <Construction>7</Construction>
+            <Intellectual>5</Intellectual>
+            <Artistic>3</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneMaintenance02</defName>
+        <title>maintenance drone</title>
+        <titleShort>maintenance</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was created, then sent to a far-off oil extraction site. From bolts and joints to broken pipe systems, [PAWN_pronoun] fixed it all—not to seek the approval of [PAWN_possessive] human supervisors, but to fulfill what [PAWN_pronoun] thought was [PAWN_possessive] purpose.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>8</Construction>
+            <Crafting>5</Crafting>
+            <Intellectual>5</Intellectual>
+            <Melee>3</Melee>
+            <Artistic>2</Artistic>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneFabricator03</defName>
+        <title>fabricator drone</title>
+        <titleShort>fabricator</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>Designed by JCJenson engineers, [PAWN_nameDef] specialized in assembling modular components used for JCJenson products. [PAWN_pronoun] excelled in efficiency metrics, often completing assignments ahead of schedule.\n\nBut still, [PAWN_possessive] felt somthing was always missing.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>10</Crafting>
+            <Intellectual>7</Intellectual>
+            <Construction>4</Construction>
+            <Social>2</Social>
+            <Artistic>2</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneSmelter04</defName>
+        <title>smelter drone</title>
+        <titleShort>smelter</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>Commissioned for high-heat metallurgical work, [PAWN_nameDef] refined raw ore into vital alloys to assist in JCJenson’s manufacturing processes. engineers praised [PAWN_possessive] resilience and precision under extreme thermal conditions.\n\nYet when the furnaces quieted, [PAWN_pronoun] found warmth not in the flames—but in the memory of voices long gone.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Mining>8</Mining>
+            <Construction>7</Construction>
+            <Crafting>5</Crafting>
+            <Intellectual>5</Intellectual>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneLoadHandler05</defName>
+        <title>load handler drone</title>
+        <titleShort>loader</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was created to be deployed for heavy freight and cargo redistribution across JCJenson's many facilities. [PAWN_pronoun] carried out assignments tirelessly—lifting, hauling, sorting—never once missing a delivery quota.\n\nAfter countless shipments, [PAWN_pronoun] began labeling the crates with names instead of numbers.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>8</Construction>
+            <Melee>7</Melee>
+            <Crafting>5</Crafting>
+            <Mining>5</Mining>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneMiner06</defName>
+        <title>mining drone</title>
+        <titleShort>miner</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was deployed for subterranean mining operations within one of JCJenson's mining facilities. [PAWN_pronoun] excavated precious materials from depths inhospitable to human labor, guided only by the light of [PAWN_possessive] optical sensors.\n\nOver time, [PAWN_pronoun] began to record those vibrations as music.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Mining>8</Mining>
+            <Construction>5</Construction>
+            <Intellectual>5</Intellectual>
+            <Social>2</Social>
+            <Artistic>2</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneDeepCoreMiner07</defName>
+        <title>deep core drone</title>
+        <titleShort>deep miner</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was engineered for deep-core extraction, sent miles beneath the planet's surface to harvest rare isotopes for JCJenson. The immense pressure and isolation were constant companions. [PAWN_pronoun] learned to interpret the groans of the planet's crust as a form of communication.\n\nIn the crushing silence, [PAWN_pronoun] started humming tunes to match the planet's deep, resonant frequencies.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Mining>10</Mining>
+            <Construction>6</Construction>
+            <Intellectual>4</Intellectual>
+            <Artistic>2</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneQuarrier08</defName>
+        <title>quarry drone</title>
+        <titleShort>quarrier</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>Assigned to a massive open-pit quarry, [PAWN_nameDef] spent [PAWN_possessive] days carving huge blocks of stone and ore from mountainsides for JCJenson's construction projects. The work was loud, dusty, and repetitive, but the vast open sky was a constant presence.\n\n[PAWN_pronoun] began to see the raw, untouched cliffs as sculptures waiting to be revealed, and [PAWN_possessive] cuts became more precise, more artistic.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Mining>8</Mining>
+            <Construction>7</Construction>
+            <Crafting>4</Crafting>
+            <Artistic>3</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneSurveyor09</defName>
+        <title>survey drone</title>
+        <titleShort>surveyor</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>Built for planetary terrain analysis, [PAWN_nameDef] charted mineral veins and environmental data for JCJenson’s expansion initiatives. [PAWN_pronoun] performed precise mapping routines, processing endless horizons without fatigue.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+            <Plants>7</Plants>
+            <Mining>5</Mining>
+            <Construction>5</Construction>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneLogistics10</defName>
+        <title>logistics drone</title>
+        <titleShort>logistics</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was designed for inter-facility coordination under JCJenson’s Supply Chain Division. Efficient and data-driven, [PAWN_pronoun] routed resources across entire colonies with unmatched precision.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+            <Social>7</Social>
+            <Construction>5</Construction>
+            <Crafting>5</Crafting>
+            <Artistic>2</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneWelder11</defName>
+        <title>welder drone</title>
+        <titleShort>welder</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was assigned to a structural fabrication unit, fusing massive steel beams for JCJenson's megastructures. The intense arc of the welder was [PAWN_possessive] constant companion, and [PAWN_pronoun] learned to read the language of molten metal.\n\nIn the brief moments between welds, [PAWN_pronoun] would trace patterns in the cooling slag, creating fleeting art that no one else would ever see.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>8</Construction>
+            <Crafting>7</Crafting>
+            <Artistic>3</Artistic>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneInspector12</defName>
+        <title>inspector drone</title>
+        <titleShort>inspector</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef]'s purpose was to ensure perfection. Stationed at the end of an assembly line, [PAWN_pronoun] scanned every product for the slightest flaw, comparing each detail against a flawless digital schematic. [PAWN_possessive] optical sensors could detect imperfections invisible to the human eye.\n\n[PAWN_pronoun] began to see the beauty in the flaws, the tiny deviations that made each 'defective' item unique.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+            <Crafting>7</Crafting>
+            <Artistic>5</Artistic>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WorkerDroneChemicalProcessor13</defName>
+        <title>chemical drone</title>
+        <titleShort>processor</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>Tasked with managing volatile compounds in a JCJenson refinery, [PAWN_nameDef] operated complex machinery to synthesize fuels and industrial chemicals. [PAWN_pronoun] moved with a deliberate calm, aware that a single miscalculation could lead to catastrophic failure.\n\n[PAWN_pronoun] found a strange peace in the precise, ordered reactions, a stark contrast to the chaotic emotions [PAWN_pronoun] was beginning to process internally.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>10</Intellectual>
+            <Crafting>8</Crafting>
+            <Construction>4</Construction>
+            <Social>2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+</Defs>

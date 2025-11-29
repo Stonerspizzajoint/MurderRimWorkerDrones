@@ -1,0 +1,23 @@
+<Defs>
+	<PawnKindDef>
+		<defName>MRWD_WorkerDroneAwakened</defName>
+		<label>awakened android</label>
+		<race>Human</race>
+		<xenotypeSet>
+			<xenotypeChances>
+				<MRWD_AwakenedWorkerDroneBase>999</MRWD_AwakenedWorkerDroneBase>
+			</xenotypeChances>
+		</xenotypeSet>
+		<apparelMoney>300~3800</apparelMoney>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<combatPower>0</combatPower>
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>0</initialResistanceRange>
+	</PawnKindDef>
+</Defs>

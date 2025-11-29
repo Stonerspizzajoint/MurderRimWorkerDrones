@@ -1,0 +1,20 @@
+<Defs>
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>MRWD_Drone_Head</defName>
+		<graphicPath>Things/Pawn/WorkerDrone/Heads/normal</graphicPath>
+		<randomChosen>false</randomChosen>
+		<hairMeshSize>(1.5, 1.5)</hairMeshSize>
+		<eyeOffsetEastWest>(0.13, 0, 0.18)</eyeOffsetEastWest>
+		<beardOffset>(0, 0, 0.038)</beardOffset>
+		<beardOffsetXEast>0.01</beardOffsetXEast>
+		<requiredGenes>
+			<li>MRWD_DroneBody</li>
+		</requiredGenes>
+		<selectionWeight>1</selectionWeight>
+		<modExtensions>
+			<li Class="VEF.Graphics.HeadExtension">
+			 <forcedHeadShader>CutoutComplex</forcedHeadShader>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+</Defs>

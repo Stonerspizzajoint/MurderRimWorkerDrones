@@ -1,0 +1,44 @@
+<Defs>
+<FactionDef ParentName="PlayerFactionBase">
+    <defName>MRWD_WorkerDronePlayer</defName>
+    <label>Worker Drone Settlement</label>
+    <description>A Settlement of worker drones.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>MRWD_WorkerDrone</basicMemberKind>
+    <pawnSingular>worker drone</pawnSingular>
+    <pawnsPlural>worker drones</pawnsPlural>
+    <techLevel>Spacer</techLevel>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <allowedCultures>
+        <li>Astropolitan</li>
+    </allowedCultures>
+    <backstoryFilters>
+        <li>
+            <categories>
+                <li>AwakenedAndroid</li>
+                <li>WorkerDrone</li>
+                <li>Offworld</li>
+                <li>Outlander</li>
+            </categories>
+        </li>
+    </backstoryFilters>
+    <factionIconPath>UI/Icons/Settlement/WorkerDroneSettlmenticon</factionIconPath>
+    <colorSpectrum>
+      <li>(30, 144, 255)</li>
+    </colorSpectrum>
+    <settlementTexturePath>UI/Icons/Settlement/WorkerDroneSettlmenticon</settlementTexturePath>
+    <startingResearchTags>
+        <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+        <li>ClassicStart</li>
+        <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+        <thingDefs>
+            <li>Synthread</li>
+        </thingDefs>
+    </apparelStuffFilter>
+</FactionDef>
+</Defs>

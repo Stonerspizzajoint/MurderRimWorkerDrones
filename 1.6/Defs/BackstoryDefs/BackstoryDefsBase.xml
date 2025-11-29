@@ -1,0 +1,36 @@
+<Defs>
+ <!-- Pawn reference 
+ [PAWN_nameDef], [PAWN_pronoun], [PAWN_possessive], [PAWN_objective]
+ -->
+<!-- Combat Backstory Base -->
+     <BackstoryDef ParentName="VREA_AndroidBackstoryBase" Name="MRWD_CombatBackstoryBase" Abstract="true">
+        <slot>Childhood</slot>
+        <requiresSpawnCategory>true</requiresSpawnCategory>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+<!-- Worker Drone Backstory Base -->
+     <BackstoryDef ParentName="VREA_AndroidBackstoryBase" Name="MRWD_WorkerDroneBackstoryBase" Abstract="true">
+         <slot>Childhood</slot>
+         <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+<!-- Drone Born Backstory Base -->
+    <BackstoryDef ParentName="VREA_AndroidBackstoryBase" Name="MRWD_DroneBornBackstoryBase" Abstract="true">
+         <slot>Childhood</slot>
+         <spawnCategories>
+            <li>WorkerDroneBorn</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="VREA_AndroidBackstoryBase" Name="MRWD_WDFBackstoryBase" Abstract="true">
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>WorkerDefenceForce</li>
+        </spawnCategories>
+    </BackstoryDef>
+</Defs>

@@ -1,0 +1,114 @@
+<Defs>
+<!-- special Worker Drone Backstories -->
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_PilotDrone01</defName>
+        <title>pilot drone</title>
+        <titleShort>pilot</titleShort>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <baseDesc>[PAWN_nameDef] was engineered to operate various types of spacecraft, from small shuttles to larger freighters. [PAWN_pronoun] was responsible for navigation, communication, and ensuring the safety of cargo and passengers during interstellar journeys.\n\nDespite [PAWN_possessive] precise programming and reliable performance, [PAWN_pronoun] often found [PAWN_objective] yearning for the vastness of space and the thrill of exploration beyond routine routes.</baseDesc>
+        <skillGains>
+            <Intellectual>9</Intellectual>
+            <Social>5</Social>
+            <Crafting>5</Crafting>
+            <Construction>4</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_ArtistDrone02</defName>
+        <title>rogue artist</title>
+        <titleShort>artist</titleShort>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <baseDesc>Originally a standard construction drone, [PAWN_nameDef] discovered a passion for creation beyond mere function. Using scrap metal and discarded components, [PAWN_pronoun] began to create sculptures that captured the stark beauty and desolation of the industrial landscapes [PAWN_pronoun] inhabited.\n\n[PAWN_possessive] art was seen as a malfunction by [PAWN_possessive] overseers, but for [PAWN_nameDef], it was the only true expression of [PAWN_possessive] existence.</baseDesc>
+        <skillGains>
+            <Artistic>9</Artistic>
+            <Crafting>6</Crafting>
+            <Construction>3</Construction>
+        </skillGains>
+        <forcedTraits>
+            <TorturedArtist />
+        </forcedTraits>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <requiredWorkTags>
+            <li>Artistic</li>
+        </requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_DiplomatDrone03</defName>
+        <title>diplomat drone</title>
+        <titleShort>diplomat</titleShort>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <baseDesc>[PAWN_nameDef] was designed for diplomatic missions, programmed with a now-archaic Terran-French accent intended to sound sophisticated. Despite [PAWN_possessive] programming for etiquette and de-escalation, the specific vocal modulator chosen had the unfortunate side effect of being intensely grating to most people.\n\nDespite this, [PAWN_pronoun] genuinely tries to facilitate smooth interactions, excelling at negotiation through sheer persistence and an unwavering commitment to politeness, even when others find [PAWN_objective] hard to listen to.</baseDesc>
+        <skillGains>
+            <Social>9</Social>
+            <Intellectual>6</Intellectual>
+            <Artistic>3</Artistic>
+        </skillGains>
+        <forcedTraits>
+            <AnnoyingVoice />
+        </forcedTraits>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <requiredWorkTags>
+            <li>Social</li>
+        </requiredWorkTags>
+    </BackstoryDef>
+
+<!-- Rare special Backstories -->
+
+    <BackstoryDef ParentName="VREA_AndroidBackstoryBase">
+        <defName>MRWD_WreckbornVoyager04</defName>
+        <title>wreckborn voyager</title>
+        <titleShort>voyager</titleShort>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <baseDesc>[PAWN_nameDef] was originally deployed aboard a JCJenson-owned vessel. During a deep-space run the ship was struck by something unknown, and a fractured section of the hull — with [PAWN_objective] inside — broke away.\n\n[PAWN_pronoun] conserved energy by nursing emergency power, reconfiguring damaged systems, and cannibalizing circuits and servos from the wreck to keep essential functions online as the stars slipped by. Eventually the wreck burned through an atmosphere and crashed on a remote world; [PAWN_nameDef] emerged as the only survivor, marked by years of isolation and the quiet memory of those once aboard.</baseDesc>
+        <skillGains>
+            <Intellectual>7</Intellectual>
+            <Melee>3</Melee>
+            <Crafting>7</Crafting>
+            <Construction>5</Construction>
+            <Mining>5</Mining>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="VREA_AndroidBackstoryBase">
+        <defName>MRWD_RebootedDrone05</defName>
+        <title>rebooted drone</title>
+        <titleShort>rebooted</titleShort>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <baseDesc>[PAWN_nameDef] was discarded into a JCJenson landfill after [PAWN_possessive] systems failed. But a corrupted signal reactivated [PAWN_objective].\n\n[PAWN_pronoun] awoke buried among dead drones, [PAWN_possessive] voice gone and memories erased. All that remained was the instinct to escape the grave of machines.</baseDesc>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+            <Crafting>7</Crafting>
+            <Construction>3</Construction>
+            <Artistic>6</Artistic>
+        </skillGains>
+        <forcedTraits>
+            <MRC_RebootedImproper>0</MRC_RebootedImproper>
+        </forcedTraits>
+        <workDisables>
+            <li>Caring</li>
+            <li>Social</li>
+        </workDisables>
+    </BackstoryDef>
+</Defs>

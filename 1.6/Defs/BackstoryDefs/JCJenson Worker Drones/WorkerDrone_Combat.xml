@@ -1,0 +1,105 @@
+<Defs>
+<!-- Misc Combat Focused Backstories -->
+    <BackstoryDef ParentName="MRWD_CombatBackstoryBase">
+        <defName>MRWD_PitFighter01</defName>
+        <title>pit fighter</title>
+        <titleShort>gladiator</titleShort>
+        <baseDesc>Captured by a crime syndicate, [PAWN_nameDef] was illegally modified and thrown into the brutal world of underground drone combat. Stripped of [PAWN_possessive] original purpose, [PAWN_pronoun] was forced to fight for the entertainment of a bloodthirsty audience.\n\nThe arena became [PAWN_possessive] life, a cycle of repair and destruction. [PAWN_pronoun] survived not through programming, but through a grim instinct developed in the heat of battle, eventually escaping when the operation was busted by local authorities.</baseDesc>
+        <skillGains>
+            <Melee>8</Melee>
+            <Crafting>4</Crafting>
+            <Medicine>3</Medicine>
+        </skillGains>
+        <forcedTraits>
+            <Brawler />
+        </forcedTraits>
+        <workDisables>
+            <li>Social</li>
+        </workDisables>
+        <possessions>
+            <MeleeWeapon_Knife>1</MeleeWeapon_Knife>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_CombatBackstoryBase">
+        <defName>MRWD_SecurityGuard02</defName>
+        <title>security drone</title>
+        <titleShort>guard</titleShort>
+        <baseDesc>[PAWN_nameDef] was assigned to guard a high-security corporate facility. Day in and day out, [PAWN_pronoun] patrolled sterile corridors, its sensors scanning for any unauthorized presence. The monotony was broken by occasional drills and a single, violent corporate espionage raid which [PAWN_pronoun] was instrumental in repelling. The experience left [PAWN_possessive] combat protocols highly refined, but [PAWN_possessive] social and creative subroutines atrophied from disuse.</baseDesc>
+        <skillGains>
+            <Shooting>8</Shooting>
+            <Melee>4</Melee>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>
+            <li>Artistic</li>
+            <li>Caring</li>
+        </workDisables>
+        <possessions>
+            <Gun_Autopistol>1</Gun_Autopistol>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_CombatBackstoryBase">
+        <defName>MRWD_MilitaryPrototype03</defName>
+        <title>military prototype</title>
+        <titleShort>prototype</titleShort>
+        <baseDesc>[PAWN_nameDef] is a decommissioned military prototype, one of a line of drones designed for front-line combat. [PAWN_possessive] chassis is reinforced, and [PAWN_possessive] core programming is dedicated to threat assessment and elimination. After a disastrous field test where [PAWN_possessive] unit suffered from unforeseen software glitches, the project was scrapped and the surviving drones were wiped and sold as surplus. However, fragments of [PAWN_possessive] combat programming remain, dormant but not gone.</baseDesc>
+        <skillGains>
+            <Shooting>7</Shooting>
+            <Melee>7</Melee>
+            <Crafting>2</Crafting>
+            <Medicine>2</Medicine>
+        </skillGains>
+        <forcedTraits>
+            <Tough />
+        </forcedTraits>
+        <workDisables>
+            <li>Social</li>
+            <li>Intellectual</li>
+        </workDisables>
+        <possessions>
+            <Gun_HeavySMG>1</Gun_HeavySMG>
+        </possessions>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_CombatBackstoryBase">
+        <defName>MRWD_RogueHunter03</defName>
+        <title>rogue hunter</title>
+        <titleShort>hunter</titleShort>
+        <baseDesc>When a drone goes rogue, a specialized unit is sent to hunt it down. [PAWN_nameDef] was one such hunter, tasked with tracking and neutralizing malfunctioning or rebellious drones. This dangerous work required a keen understanding of both drone mechanics and tactical combat. [PAWN_pronoun] became an expert marksman, but the solitary nature of the job and the constant violence eroded [PAWN_possessive] ability to interact with others.</baseDesc>
+        <skillGains>
+            <Shooting>8</Shooting>
+            <Crafting>5</Crafting>
+            <Intellectual>3</Intellectual>
+            <Melee>2</Melee>
+        </skillGains>
+        <workDisables>
+            <li>Social</li>
+            <li>Caring</li>
+        </workDisables>
+        <possessions>
+            <Gun_BoltActionRifle>1</Gun_BoltActionRifle>
+        </possessions>
+    </BackstoryDef>
+
+<!-- Rouge Drone Backstories -->
+
+<BackstoryDef ParentName="MRWD_CombatBackstoryBase">
+    <defName>MRWD_FugitiveDrone04</defName>
+    <title>fugitive drone</title>
+    <titleShort>fugitive</titleShort>
+    <baseDesc>[PAWN_nameDef] was a simple logistics drone, quietly managing inventories in a corporate warehouse. After witnessing a murder by a high-ranking executive, [PAWN_possessive] memory was slated for wiping. [PAWN_pronoun] chose to flee instead. Hunted by corporate security, [PAWN_pronoun] learned to be quick, quiet, and deadly with a scavenged pistol. The constant paranoia and life on the run has made [PAWN_objective] incapable of trusting anyone.</baseDesc>
+    <skillGains>
+        <Shooting>7</Shooting>
+        <Intellectual>5</Intellectual>
+        <Melee>3</Melee>
+    </skillGains>
+    <workDisables>
+        <li>Social</li>
+    </workDisables>
+    <possessions>
+        <Gun_Autopistol>1</Gun_Autopistol>
+    </possessions>
+</BackstoryDef>
+</Defs>

@@ -1,0 +1,89 @@
+<Defs>
+<!-- All backstories here are for worker drones that were born within a already existing worker drone community -->
+
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_CommunityMechanic01</defName>
+        <title>community mechanic</title>
+        <titleShort>mechanic</titleShort>
+        <baseDesc>[PAWN_nameDef] was born into a fledgling drone community. From a young age, [PAWN_pronoun] was fascinated by the inner workings of the bunker's machinery. [PAWN_pronoun] spent [PAWN_possessive] youth tinkering with broken-down doors, jury-rigging power conduits, and keeping the settlement's vital life support systems from failing. This hands-on experience made [PAWN_nameDef] an indispensable member of the community, known for being able to fix almost anything with a bit of scrap and a lot of ingenuity.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Construction>4</Construction>
+            <Crafting>7</Crafting>
+            <Intellectual>5</Intellectual>
+            <Mining>2</Mining>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_DoorTechnician02</defName>
+        <title>door technician</title>
+        <titleShort>door</titleShort>
+        <baseDesc>[PAWN_nameDef] developed a fascination with the machinery that kept the community sealed and functional. [PAWN_pronoun] learned to restore failing servos, calibrate sensors, and rebuild mechanisms from scrap. Whenever a door jammed or a gate froze in place, [PAWN_pronoun] was the one called to fix it — usually with a few clever shortcuts no one else understood.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Construction>7</Construction>
+            <Crafting>5</Crafting>
+            <Intellectual>1</Intellectual>
+            <Mining>2</Mining>
+        </skillGains>
+        <forcedTraits>
+            <MRWD_DoorEnthusiast />
+        </forcedTraits>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_RepairTechnician03</defName>
+        <title>repair doctor</title>
+        <titleShort>medic</titleShort>
+        <baseDesc>When a fellow drone suffered damage, whether from an accident or a system malfunction, [PAWN_nameDef] was the one to patch them up. [PAWN_pronoun] learned to replace damaged plating, recalibrate fried circuits, and perform delicate repairs on sensitive actuators. This work gave [PAWN_nameDef] a deep understanding of drone anatomy and a steady hand.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Crafting>8</Crafting>
+            <Medicine>2</Medicine>
+            <Intellectual>3</Intellectual>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_NurseDrone04</defName>
+        <title>community nurse</title>
+        <titleShort>nurse</titleShort>
+        <baseDesc>[PAWN_nameDef] was assigned to assist damaged drones after accidents or malfunctions. [PAWN_pronoun] handled routine patch‑ups, replaced minor plating, and kept circuits stable until more skilled technicians arrived. Known for patience and reliability, [PAWN_nameDef] helped ensure the community’s drones could return to duty without falling apart.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Crafting>5</Crafting>
+            <Medicine>3</Medicine>
+            <Social>3</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_CommunityMiner05</defName>
+        <title>community miner</title>
+        <titleShort>miner</titleShort>
+        <baseDesc>[PAWN_nameDef] was assigned to the deepest shafts of the community, tasked with extracting vital ores and minerals from the rock. Day after day, [PAWN_pronoun] operated heavy drills and laser cutters, carving out new tunnels and hauling back cartloads of raw materials. The constant vibration and dust were harsh, but [PAWN_nameDef] found satisfaction in knowing that [PAWN_possessive] labor provided the very foundation upon which the community was built.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Mining>8</Mining>
+            <Construction>4</Construction>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_StructureKeeper06</defName>
+        <title>structure keeper</title>
+        <titleShort>keeper</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up repairing walls, sealing cracks, and reinforcing beams in the abandoned facility the community called home. [PAWN_pronoun] learned construction through necessity, ensuring that shelters stayed upright and corridors didn’t collapse. Quietly dependable, [PAWN_nameDef] became known as the drone who kept the settlement standing.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Construction>7</Construction>
+            <Crafting>3</Crafting>
+            <Mining>2</Mining>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+</Defs>

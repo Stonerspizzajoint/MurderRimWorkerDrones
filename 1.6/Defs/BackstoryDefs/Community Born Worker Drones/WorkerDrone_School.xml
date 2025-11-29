@@ -1,0 +1,43 @@
+<Defs>
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_CommunityTeacher01</defName>
+        <title>community teacher</title>
+        <titleShort>teacher</titleShort>
+        <baseDesc>In a makeshift classroom carved from an old service bay, [PAWN_nameDef] taught cohorts of young drones on a fixed schedule. [PAWN_pronoun] wrote lesson plans, ran quizzes and lab practicums, and assigned group projects in circuitry, systems history, and safety protocols. Between bells, [PAWN_pronoun] mediated clique disputes, organized clubs and assemblies, and tried to make dry theory feel exciting. Patient but firm, [PAWN_nameDef] believed that understanding why mattered as much as knowing how.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>7</Intellectual>
+            <Crafting>3</Crafting>
+            <Construction>2</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_StudentDrone02</defName>
+        <title>student drone</title>
+        <titleShort>student</titleShort>
+        <baseDesc>In a makeshift classroom deep within the community’s walls, [PAWN_nameDef] and other young drones learned their purpose. Their days were a strange mix of technical instruction and fledgling social dynamics, mirroring the high school cultures of the long-gone humans. [PAWN_pronoun] excelled at absorbing data from flickering monitors but often struggled with the unwritten rules of drone cliques and social hierarchies. Eager but a bit awkward, [PAWN_nameDef] just wanted to find a place to fit in.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+            <Social>2</Social>
+            <Crafting>1</Crafting>
+            <Construction>1</Construction>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_DroneBornBackstoryBase">
+        <defName>MRWD_AngstyStudentDrone03</defName>
+        <title>angsty student</title>
+        <titleShort>angsty</titleShort>
+        <baseDesc>In a makeshift classroom deep within the community’s walls, [PAWN_nameDef] never accepted the quiet routines other student drones absorbed without question. Between lessons, [PAWN_pronoun] hoarded corrupted schematics, welded together forbidden drone-mod prototypes, and sketched plans for escaping the sealed halls to see the wider world. Authority drones flagged [PAWN_possessive] attitude as "non-cooperative," but those same subroutines also drove [PAWN_objective] to innovate clever tool-weapons and power routing tricks no instructor had sanctioned.\n\nIsolated by sarcasm yet fueled by restless curiosity, [PAWN_nameDef] learned to channel frustration into rapid problem‑solving—still convinced the community is too small for the ideas humming in [PAWN_possessive] core.</baseDesc>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Crafting>4</Crafting>
+            <Intellectual>3</Intellectual>
+            <Shooting>2</Shooting>
+            <Social>1</Social>
+        </skillGains>
+    </BackstoryDef>
+</Defs>

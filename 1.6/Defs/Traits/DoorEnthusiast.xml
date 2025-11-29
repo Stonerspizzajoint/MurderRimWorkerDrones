@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraitDef>
+    <defName>MRWD_DoorEnthusiast</defName>
+    <label>door enthusiast</label>
+    <description>Admires doors; gains a door satisfaction need and suffers grief when colony doors are destroyed.</description>
+    <commonality>1.0</commonality>
+    <requiredWorkTags>
+      <li>ManualDumb</li>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+    <conflictingTraits>
+      <li>Undergrounder</li>
+    </conflictingTraits>
+    <degreeDatas>
+      <li>
+        <label>door enthusiast</label>
+        <description>Gains door satisfaction need and mourns lost colony doors.</description>
+        <skillGains>
+          <Construction>3</Construction>
+        </skillGains>
+        <enablesNeeds>
+          <li>Indoors</li>
+          <li>MRWD_DoorSatisfaction</li>
+        </enablesNeeds>
+        <disablesNeeds>
+          <li>Outdoors</li>
+        </disablesNeeds>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+
+  <NeedDef>
+    <defName>MRWD_DoorSatisfaction</defName>
+    <needClass>MurderRimCore.MRWD.Need_DoorSatisfaction</needClass>
+    <showOnNeedList>true</showOnNeedList>
+    <label>door satisfaction</label>
+    <description>How content this pawn is with the colony's doors.</description>
+    <listPriority>0.61</listPriority>
+    <onlyIfCausedByTrait>true</onlyIfCausedByTrait>
+  </NeedDef>
+
+  <ThoughtDef>
+    <defName>MRWD_DoorEnthusiast_Thought</defName>
+    <workerClass>MurderRimCore.MRWD.ThoughtWorker_DoorEnthusiastThought</workerClass>
+    <durationDays>-1</durationDays>
+    <stackLimit>1</stackLimit>
+    <requiredTraits>
+      <li>MRWD_DoorEnthusiast</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>utterly exposed</label>
+        <baseMoodEffect>-16</baseMoodEffect>
+        <description>No doors at all. I feel completely unsafe.</description>
+      </li>
+      <li>
+        <label>very unsafe</label>
+        <baseMoodEffect>-10</baseMoodEffect>
+        <description>Far too few doors. Hallways feel exposed.</description>
+      </li>
+      <li>
+        <label>uneasy</label>
+        <baseMoodEffect>-4</baseMoodEffect>
+        <description>Partitions are sparse. I don’t feel secure.</description>
+      </li>
+      <!-- New stage added here -->
+      <li>
+        <label>somewhat secure</label>
+        <baseMoodEffect>-1</baseMoodEffect>
+        <description>There are some doors placed; I feel a bit safer.</description>
+      </li>
+      <li>
+        <label>adequately secure</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <description>There are enough doors to feel reasonably safe.</description>
+      </li>
+      <li>
+        <label>secure</label>
+        <baseMoodEffect>5</baseMoodEffect>
+        <description>Well-placed doors keep the base feeling safe.</description>
+      </li>
+      <li>
+        <label>fortified and safe</label>
+        <baseMoodEffect>10</baseMoodEffect>
+        <description>Abundant sturdy doors. I feel protected everywhere.</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Memory thought when a colony door is destroyed -->
+  <ThoughtDef>
+    <defName>MRWD_DoorLost</defName>
+    <label>lost a cherished door</label>
+    <durationDays>2</durationDays>
+    <stackLimit>10</stackLimit>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <requiredTraits>
+      <li>MRWD_DoorEnthusiast</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>lost a door</label>
+        <baseMoodEffect>-5</baseMoodEffect>
+        <description>One of my colony doors was destroyed. I miss its reassuring presence.</description>
+      </li>
+      <li>
+        <label>lost a strong door</label>
+        <baseMoodEffect>-9</baseMoodEffect>
+        <description>A sturdy door I admired was destroyed. It feels like losing a friend.</description>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

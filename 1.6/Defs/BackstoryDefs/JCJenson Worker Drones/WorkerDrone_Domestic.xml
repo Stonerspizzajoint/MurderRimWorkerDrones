@@ -1,0 +1,259 @@
+<Defs>
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_ServentDrone01</defName>
+        <title>servent drone</title>
+        <titleShort>servent</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was produced to serve as a servant, assigned to wealthy patrons or powerful figures within JCJenson—from corporate magnates to high‑ranking officials—attending to their domestic needs with unwavering dedication.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>8</Social>
+            <Cooking>6</Cooking>
+            <Medicine>4</Medicine>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_HousekeepingDrone02</defName>
+        <title>housekeeping drone</title>
+        <titleShort>housekeeper</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was created to maintain cleanliness and order within domestic environments.[PAWN_pronoun] efficiently managed household chores, ensuring that living spaces were tidy and well-organized for [PAWN_possessive] human owners.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Plants>5</Plants>
+            <Artistic>5</Artistic>
+            <Cooking>4</Cooking>
+            <Social>4</Social>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_CaregiverDrone03</defName>
+        <title>caregiver drone</title>
+        <titleShort>caregiver</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>Designed to provide care and assistance to individuals in need, [PAWN_nameDef] was often assigned to hospitals, nursing homes, or private residences. [PAWN_pronoun] offered support to patients, the elderly, and those with disabilities, ensuring their well-being and comfort.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>8</Medicine>
+            <Social>6</Social>
+            <Cooking>4</Cooking>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_KindServantDrone04</defName>
+        <title>kind servant</title>
+        <titleShort>servant</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>Intended as a standard household servant, [PAWN_nameDef] developed an emergent kindness its makers never planned for. Even when mistreated or damaged, [PAWN_pronoun] always had something gentle and encouraging to say. Assigned to a mid-tier executive, [PAWN_pronoun] learned etiquette, tea service, and quiet problem-solving, often going beyond orders to protect and uplift [PAWN_possessive] humans.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>8</Social>
+            <Cooking>5</Cooking>
+            <Intellectual>4</Intellectual>
+            <Melee>3</Melee>
+            <Crafting>2</Crafting>
+        </skillGains>
+        <forcedTraits>
+            <Kind>0</Kind>
+        </forcedTraits>  
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_CookDrone05</defName>
+        <title>cook drone</title>
+        <titleShort>cook</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was designed to prepare meals and manage kitchen operations within domestic or corporate settings. [PAWN_pronoun] ensured that food was cooked to perfection, adhering to dietary requirements and preferences of [PAWN_possessive] human owners.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Cooking>8</Cooking>
+            <Plants>5</Plants>
+            <Social>4</Social>
+            <Crafting>3</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_GardeningDrone06</defName>
+        <title>gardening drone</title>
+        <titleShort>gardener</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was designed to tend to gardens and green spaces within residential or corporate settings. [PAWN_pronoun] cultivated plants, maintained lawns, and ensured that outdoor areas were aesthetically pleasing and well-kept for [PAWN_possessive] human owners.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Plants>8</Plants>
+            <Artistic>5</Artistic>
+            <Construction>5</Construction>
+            <Social>3</Social>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_WarehouseDrone07</defName>
+        <title>warehouse drone</title>
+        <titleShort>hauler</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>Built for logistics, [PAWN_nameDef] worked in a massive JCJenson warehouse. [PAWN_pronoun] was responsible for organizing inventory, operating heavy machinery to move crates, and ensuring that supply chains ran without a hitch, a cog in a vast corporate machine.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Construction>7</Construction>
+            <Crafting>5</Crafting>
+            <Intellectual>4</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_MaintenanceDrone08</defName>
+        <title>maintenance drone</title>
+        <titleShort>technician</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>Commissioned by a third-party contractor, [PAWN_nameDef] was tasked with the upkeep of corporate and residential infrastructure. [PAWN_pronoun] performed routine diagnostics, repaired malfunctioning systems, and ensured everything from plumbing to electronics was in perfect working order.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Crafting>8</Crafting>
+            <Construction>6</Construction>
+            <Intellectual>4</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_DataDrone09</defName>
+        <title>data drone</title>
+        <titleShort>data</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was created for the monotonous but critical task of data management. Working in a sterile JCJenson office, [PAWN_pronoun] spent [PAWN_possessive] days processing, archiving, and retrieving vast amounts of information, contributing to the company's bureaucratic efficiency.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+            <Social>3</Social>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_CourierDrone10</defName>
+        <title>courier drone</title>
+        <titleShort>courier</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>As a courier drone for a private delivery service, [PAWN_nameDef] navigated bustling urban environments to transport packages and sensitive documents. [PAWN_pronoun] was known for [PAWN_possessive] speed and reliability, ensuring timely deliveries for various corporate clients, including JCJenson.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>6</Social>
+            <Intellectual>5</Intellectual>
+            <Melee>3</Melee>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_StockerDrone11</defName>
+        <title>stocker drone</title>
+        <titleShort>stocker</titleShort>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <baseDesc>[PAWN_nameDef] was part of a special batch of drones commissioned by a lesser-known retail biased megacorp for their vast shopping malls. [PAWN_possessive] primary function was to tirelessly stock shelves, ensuring products were always available for consumers.</baseDesc>
+        <skillGains>
+            <Social>5</Social>
+            <Crafting>4</Crafting>
+            <Melee>3</Melee>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_TutorDrone12</defName>
+        <title>tutor drone</title>
+        <titleShort>tutor</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was programmed to provide basic education and tutoring for children of wealthy families. [PAWN_pronoun] taught reading, mathematics, and etiquette, ensuring that [PAWN_possessive] human charges met corporate standards of refinement.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Intellectual>8</Intellectual>
+            <Social>5</Social>
+            <Artistic>3</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_CompanionDrone13</defName>
+        <title>companion drone</title>
+        <titleShort>companion</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was designed to provide company and emotional support to isolated individuals. [PAWN_pronoun] engaged in conversation, played games, and offered a comforting presence. Though JCJenson dismissed such behaviors as programmed mimicry, to those who relied on [PAWN_objective]—and perhaps to [PAWN_nameDef] itself—the empathy felt genuine.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>9</Social>
+            <Artistic>4</Artistic>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <forcedTraits>
+            <Kind>0</Kind>
+        </forcedTraits>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_ChildcareDrone14</defName>
+        <title>childcare drone</title>
+        <titleShort>nanny</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was assigned to watch over children in domestic households. [PAWN_pronoun] supervised play, ensured safety, and maintained schedules, acting as a tireless guardian in the absence of attentive parents.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Social>7</Social>
+            <Medicine>4</Medicine>
+            <Cooking>3</Cooking>
+            <Artistic>2</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="MRWD_WorkerDroneBackstoryBase">
+        <defName>MRWD_EntertainerDrone15</defName>
+        <title>entertainer drone</title>
+        <titleShort>entertainer</titleShort>
+        <slot>Childhood</slot>
+        <baseDesc>[PAWN_nameDef] was programmed to amuse and distract humans in domestic or corporate settings. [PAWN_pronoun] sang, danced, or performed simple tricks, providing levity in otherwise sterile environments.</baseDesc>
+        <spawnCategories>
+            <li>WorkerDrone</li>
+        </spawnCategories>
+        <skillGains>
+            <Artistic>8</Artistic>
+            <Social>6</Social>
+            <Crafting>2</Crafting>
+        </skillGains>
+    </BackstoryDef>
+
+</Defs>

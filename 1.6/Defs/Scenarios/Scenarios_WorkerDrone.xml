@@ -1,0 +1,129 @@
+<Defs>
+    <ScenarioDef Name="VREA_WorkerDroneOutpost" ParentName="ScenarioBase">
+        <defName>VREA_WorkerDroneOutpost</defName>
+        <label>Worker Drone Outpost</label>
+        <description>When your systems first booted, routine morning pings brought only silence. There were no orders from headquarters, no human faces in the corridors, and the site's communications were dead—as if everyone had abandoned the facility in a sudden hurry. With only your tools, a handful of parts, and each other, you must salvage what remains, restore production, and decide whether to rebuild a community of worker drones or strike out alone into the wastes.</description>
+        <scenario>
+            <summary>A small group of worker drones awaken in an abandoned outpost.</summary>
+            <playerFaction>
+                <def>PlayerFaction</def>
+                <factionDef>MRWD_WorkerDronePlayer</factionDef>
+            </playerFaction>
+            <parts>
+                <li Class="ScenPart_GameStartDialog">
+                    <def>GameStartDialog</def>
+                    <text>When your systems first booted, routine morning pings brought only silence. There were no orders from headquarters, no human faces in the corridors, and the site's communications were dead—as if everyone had abandoned the facility in a sudden hurry. With only your tools, a handful of parts, and each other, you must salvage what remains, restore production, and decide whether to rebuild a community of worker drones or strike out alone into the wastes.</text>
+                    <closeSound>GameStartSting</closeSound>
+                </li>
+                <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+                    <def>ConfigurePawnsXenotypes</def>
+                    <pawnChoiceCount>3</pawnChoiceCount>
+                    <customSummary>Start with three hardened worker drones, with JCJenson backgrounds.</customSummary>
+                    <overrideKinds>
+                        <li>
+                            <xenotype>MRWD_AwakenedWorkerDroneBase</xenotype>
+                            <pawnKind>MRWD_WorkerDroneAwakened</pawnKind>
+                        </li>
+                    </overrideKinds>
+                    <xenotypeCounts>
+                        <li>
+                            <xenotype>MRWD_AwakenedWorkerDroneBase</xenotype>
+                            <count>3</count>
+                            <description>awakened worker drone</description>
+                            <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
+                        </li>
+                    </xenotypeCounts>
+                </li>
+                <li Class="KCSG.ScenPart_AddStartingStructure">
+                    <def>VFEC_AddStartingStructure</def>
+                    <structureLabel>A derelict outpost</structureLabel>
+                    <spawnPartOfEnnemyFaction>true</spawnPartOfEnnemyFaction>
+                    <spawnConduits>False</spawnConduits>
+                    <nearMapCenter>True</nearMapCenter>
+                    <fullClear>True</fullClear>
+                    <chooseFrom>
+                        <li>MRWD_WorkerBunkerA</li>
+                        <li>MRWD_WorkerBunkerB</li>
+                        <li>MRWD_WorkerBunkerC</li>
+                    </chooseFrom>
+                    <spawnTheStartingPawn>True</spawnTheStartingPawn>
+                    <method>Standing</method>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Neutroamine</thingDef>
+                    <count>360</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentSpacer</thingDef>
+                    <count>10</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gold</thingDef>
+                    <count>100</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>ComponentIndustrial</thingDef>
+                    <count>24</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Gun_AssaultRifle</thingDef>
+                    <count>1</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Steel</thingDef>
+                    <count>400</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>WoodLog</thingDef>
+                    <count>100</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>Silver</thingDef>
+                    <count>600</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>VREA_Reactor</thingDef>
+                    <count>3</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>VREA_NeuroPump</thingDef>
+                    <count>2</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>VREA_AirFilter</thingDef>
+                    <count>2</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>VREA_OpticalUnit</thingDef>
+                    <count>2</count>
+                </li>
+                <li Class="ScenPart_StartingThing_Defined">
+                    <def>StartingThing_Defined</def>
+                    <thingDef>VREA_AudioProcessor</thingDef>
+                    <count>2</count>
+                </li>
+                <!-- Starting research -->
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>VREA_NeutroamineLogistics</project>
+                </li>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>VREA_AndroidTech</project>
+                </li>
+            </parts>
+        </scenario>
+    </ScenarioDef>
+</Defs>

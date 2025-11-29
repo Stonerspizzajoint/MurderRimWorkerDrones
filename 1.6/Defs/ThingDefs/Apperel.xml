@@ -1,0 +1,132 @@
+<Defs>
+    <ThingDef ParentName="HatMakeableBase">
+		<defName>MRWD_Headgear_Hardhat</defName>
+		<label>Worker Drone Hardhat</label>
+		<description>A type of hardhat designed for drones and androids. Provides durable protection and seamless tech integration.</description>
+		<graphicData>
+			<texPath>Things/Pawn/WorkerDrone/Apparel/Headgear/WorkerHardHat/WorkerHardHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.15</generateCommonality>
+    	<costList>
+      		<Steel>45</Steel>
+    	</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>0</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+		</equippedStatOffsets>
+		<thingCategories Inherit='False'>
+			<li>Headgear</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPaths>
+				<li>Things/Pawn/WorkerDrone/Apparel/Headgear/WorkerHardHat/WorkerHardHat</li>
+			</wornGraphicPaths>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>WorkerDroneBasic</li>
+				<li>WorkerDrone</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+    <ThingDef ParentName="HatMakeableBase">
+		<defName>MRWD_Headgear_MaidHardhat</defName>
+		<label>Maid Hardhat</label>
+		<description>A type of hardhat designed for drones and androids. Provides durable protection and seamless tech integration. This specific design is intended for maid drones, featuring a frilly aesthetic.</description>
+		<graphicData>
+			<texPath>Things/Pawn/WorkerDrone/Apparel/Headgear/MaidHardHat/MaidHardHat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<tradeability>Sellable</tradeability>
+		<generateCommonality>0.15</generateCommonality>
+    	<costList>
+      		<Steel>45</Steel>
+			<Cloth>5</Cloth>
+    	</costList>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>2</Mass>
+			<ArmorRating_Sharp>0.12</ArmorRating_Sharp>
+			<ArmorRating_Blunt>1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.6</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.1</ConstructionSpeed>
+			<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+		</equippedStatOffsets>
+		<thingCategories Inherit='False'>
+			<li>Headgear</li>
+		</thingCategories>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<wornGraphicPaths>
+				<li>Things/Pawn/WorkerDrone/Apparel/Headgear/MaidHardHat/MaidHardHat</li>
+			</wornGraphicPaths>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>WorkerDroneBasic</li>
+				<li>MaidDrone</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<soundWorking>Recipe_Machining</soundWorking>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers Inherit="False">
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+</Defs>

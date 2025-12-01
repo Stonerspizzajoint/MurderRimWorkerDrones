@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>MurderRim - The Worker Drones</name>
-  <author>Stonerspizzajoint</author>
-  <modVersion>1.0</modVersion>
+  <shortName>Worker Drones</shortName>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>

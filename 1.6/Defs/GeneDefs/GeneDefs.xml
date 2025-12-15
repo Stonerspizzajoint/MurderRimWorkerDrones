@@ -4,7 +4,7 @@
 		<label>Worker Drone Frame</label>
 		<labelShortAdj>Worker Drone</labelShortAdj>
 		<displayOrderInCategory>9999</displayOrderInCategory>
-		<geneClass>MurderRimCore.MRWD.Gene_DroneBody</geneClass>
+		<geneClass>MRWD.Gene_DroneBody</geneClass>
 		<description>A JCJenson-manufactured Worker Drone chassis featuring a compact titanium-composite frame and integrated visual display system. (chance to spawn wearing a JCJenson, Worker Certified Hardhat.)\n\nOriginally designed for hazardous mining operations on exoplanets, these units sacrifice structural integrity for enhanced mobility and efficiency. The lightweight construction reduces overall mass by 25% but leaves critical systems more exposed to damage (+10% vulnerability), and Advanced servo motors provide superior work performance.</description>
 		<iconPath>UI/Icons/Genes/Gene_DroneBody</iconPath>
 		<biostatCpx>0</biostatCpx>
@@ -244,13 +244,13 @@
 		<label>observational learning</label>
 		<description>Originally built to rapidly program factory and mining units, JCJenson's visual-learning firmware lets this drone learn by watching and repeating. When idle with a clear line of sight (within 14 tiles), it mirrors a small share of a visible worker's XP, scaled by passion (~6-20%), and never past the demonstrator's current skill level. Works across factions. No learning while busy or if vision is blocked.</description>
 		<iconPath>UI/Icons/Genes/Gene_LearningByObservation</iconPath>
-		<geneClass>MurderRimCore.Gene_ObservationLearning</geneClass>
+		<geneClass>MRWD.Gene_ObservationLearning</geneClass>
 		<biostatCpx>2</biostatCpx>
 		<biostatMet>1</biostatMet>
 		<displayOrderInCategory>550</displayOrderInCategory>
 		<selectionWeight>0</selectionWeight>
 		<modExtensions>
-			<li Class="MurderRimCore.ObservationLearningExtension">
+			<li Class="MRWD.ObservationLearningExtension">
 				<!-- Effecter only -->
 				<enableEffecter>true</enableEffecter>
 				<effecterDefName>Birthday</effecterDefName>

@@ -1,5 +1,5 @@
 <Defs>
-    <MurderRimCore.MRWD.WorkerDroneSettingsDef>
+    <MRWD.WorkerDroneSettingsDef>
         <defName>MRWD_WorkerDroneSettings</defName>
         <BackstorySettings>
             <globalCategories>
@@ -56,5 +56,5 @@
             <baldChanceMale>0.5</baldChanceMale>
             <baldChanceFemale>0.05</baldChanceFemale>
         </SpawnSettings>
-    </MurderRimCore.MRWD.WorkerDroneSettingsDef>
+    </MRWD.WorkerDroneSettingsDef>
 </Defs>

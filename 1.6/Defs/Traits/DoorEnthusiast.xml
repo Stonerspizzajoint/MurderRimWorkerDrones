@@ -32,7 +32,7 @@
 
   <NeedDef>
     <defName>MRWD_DoorSatisfaction</defName>
-    <needClass>MurderRimCore.MRWD.Need_DoorSatisfaction</needClass>
+    <needClass>MRWD.Need_DoorSatisfaction</needClass>
     <showOnNeedList>true</showOnNeedList>
     <label>door satisfaction</label>
     <description>How content this pawn is with the colony's doors.</description>
@@ -42,7 +42,7 @@
 
   <ThoughtDef>
     <defName>MRWD_DoorEnthusiast_Thought</defName>
-    <workerClass>MurderRimCore.MRWD.ThoughtWorker_DoorEnthusiastThought</workerClass>
+    <workerClass>MRWD.ThoughtWorker_DoorEnthusiastThought</workerClass>
     <durationDays>-1</durationDays>
     <stackLimit>1</stackLimit>
     <requiredTraits>

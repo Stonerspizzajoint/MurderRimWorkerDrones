@@ -15,7 +15,7 @@
     <degreeDatas>
       <li>
         <label>door enthusiast</label>
-        <description>Gains door satisfaction need and mourns lost colony doors.</description>
+        <description>{PAWN_nameDef} has an unusual appreciation for doors. The more doors the colony has, the happier they become.</description>
         <skillGains>
           <Construction>3</Construction>
         </skillGains>
@@ -52,17 +52,17 @@
       <li>
         <label>utterly exposed</label>
         <baseMoodEffect>-16</baseMoodEffect>
-        <description>No doors at all. I feel completely unsafe.</description>
+        <description>I feel vulnerable without any doors.</description>
       </li>
       <li>
         <label>very unsafe</label>
         <baseMoodEffect>-10</baseMoodEffect>
-        <description>Far too few doors. Hallways feel exposed.</description>
+        <description>A couple of doors barely keep me safe; I need more.</description>
       </li>
       <li>
         <label>uneasy</label>
         <baseMoodEffect>-4</baseMoodEffect>
-        <description>Partitions are sparse. I don’t feel secure.</description>
+        <description>I feel only a little safer, but I still long for more doors.</description>
       </li>
       <!-- New stage added here -->
       <li>
@@ -78,12 +78,12 @@
       <li>
         <label>secure</label>
         <baseMoodEffect>5</baseMoodEffect>
-        <description>Well-placed doors keep the base feeling safe.</description>
+        <description>These doors give me a real sense of security.</description>
       </li>
       <li>
         <label>fortified and safe</label>
         <baseMoodEffect>10</baseMoodEffect>
-        <description>Abundant sturdy doors. I feel protected everywhere.</description>
+        <description>I'm completely at ease with so many doors around me!</description>
       </li>
     </stages>
   </ThoughtDef>

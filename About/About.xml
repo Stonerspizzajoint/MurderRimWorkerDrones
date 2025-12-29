@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>MurderRim - The Worker Drones</name>
-  <shortName>Worker Drones</shortName>
+  <shortName>The Worker Drones</shortName>
+  <author>Stonerspizzajoint</author>
+  <modVersion>1.0</modVersion>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
@@ -12,6 +14,10 @@
 		  <displayName>MurderRim Core</displayName>
       <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3615768787</steamWorkshopUrl>
     </li>
+		<li>
+		  <packageId>Ludeon.RimWorld.Biotech</packageId>
+		  <displayName>Biotech</displayName>
+	  </li>
   </modDependencies>
 	<loadBefore>
 	</loadBefore>
@@ -20,9 +26,22 @@
 	</loadAfter>
   <packageId>Stonerspizzajoint.TheWorkerDrones</packageId>
   <description>
-This Mod Simply adds, Worker Drones and a new faction from the web series "Murder Drones" utilizing the mod VRE - androids. 
-(and Yes, There is some facial animation support.)
- 
+[img]https://i.imgur.com/7IE3V9n.png[/img]
+This Mod adds Worker Drones and a new faction Inspired from the web series "Murder Drones" utilizing VRE - Androids.
+
+[img]https://i.imgur.com/47VZuXj.png[/img]
+
+[img]https://i.imgur.com/Bl03CLR.png[/img]
+[img]https://i.imgur.com/E0CQ1IJ.png[/img]
+[img]https://i.imgur.com/wEupXXb.png[/img]
+[img]https://i.imgur.com/hxVodg4.png[/img]
+[img]https://i.imgur.com/z7dJebO.png[/img]
+[img]https://i.imgur.com/95w16bW.png[/img]
+[img]https://i.imgur.com/qPKfrtY.png[/img]
+
+[img]https://i.imgur.com/GZchImq.png[/img]
+[img]https://i.imgur.com/f7BQ4i8.png[/img]
+
 im still pretty new to modding, so If there are any issues or questions, feel free to let me know.
 Anyways, Thank you! :D
 

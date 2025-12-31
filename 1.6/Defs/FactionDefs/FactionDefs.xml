@@ -170,7 +170,6 @@
           <li>Mountainous</li>
           <li>LargeHills</li>
         </requiredHillLevels>
-        <settlementGenerationSymbol>UI/Icons/Settlement/WorkerDroneSettlmenticon</settlementGenerationSymbol>
       </li>
     </modExtensions>
   </FactionDef>
